@@ -1,0 +1,47 @@
+@import "/node_modules/bootstrap/scss/bootstrap-reboot.scss";
+@import "/node_modules/bootstrap/scss/bootstrap-grid.scss";
+@import "./nav";
+
+// Root variables
+
+// Colors
+
+$main-font-color: #1a1a1a;
+
+body {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 100%;
+  color: $main-font-color;
+}
+
+a {
+  color: $main-font-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+}
+
+// Utilities - text
+
+.text-center {
+  text-align: center;
+}
+
+// Utilities - spacing
+
+.py-30 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    font-size: 1.125rem;
+  }
+}
