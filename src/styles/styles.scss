@@ -1,12 +1,23 @@
 @import "/node_modules/bootstrap/scss/bootstrap-reboot.scss";
 @import "/node_modules/bootstrap/scss/bootstrap-grid.scss";
 @import "./nav";
+@import "./font-sizes";
 
 // Root variables
 
 // Colors
-
 $main-font-color: #1a1a1a;
+$light-font-color: #464646;
+$white-font-color: #fff;
+
+$accent-color: #f5d2b3;
+$main-bg-color: #f3f3f0;
+$alt-bg-color: #efeae6;
+$white-bg-color: #fff;
+
+$cta-color: #f06068;
+
+$border-color: $accent-color;
 
 #root {
   min-height: 100vh;
@@ -20,8 +31,14 @@ body {
   color: $main-font-color;
 }
 
+section {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
 a {
   color: $main-font-color;
+  text-decoration: none;
 }
 
 h1,
@@ -33,13 +50,99 @@ h6 {
   font-family: "Playfair Display", serif;
 }
 
+.light-font {
+  color: $light-font-color;
+}
+
+.white-font {
+  color: $white-font-color;
+}
+
+.main-bg-color {
+  background: $main-bg-color;
+}
+
+.alt-bg-color {
+  background: $alt-bg-color;
+}
+
+.white-bg {
+  background: $white-bg-color;
+}
+
+.cta-color {
+  background: $cta-color;
+}
+
+// Utilities border
+
+.border-bottom {
+  border-bottom: 1px solid $border-color;
+}
+
+.border-radius-5 {
+  border-radius: 5px;
+}
+
+.border-radius-25 {
+  border-radius: 25px;
+}
+
 // Utilities - text
 
 .text-center {
   text-align: center;
 }
 
+// Utilities images
+
+.img-full {
+  width: 100%;
+  height: auto;
+}
+
+// Utilities buttons
+
+.btn {
+  border-radius: 5px;
+  padding: 8px 18px;
+  width: auto;
+}
+
+.btn.btn-primary {
+  background: $cta-color;
+  color: $white-font-color;
+}
+
+// Utilities size
+
+.w-100 {
+  width: 100%;
+}
+
 // Utilities - spacing
+
+.pb-15 {
+  padding-bottom: 15px;
+}
+
+.pb-30 {
+  padding-bottom: 30px;
+}
+
+.pt-15 {
+  padding-top: 15px;
+}
+
+.py-0 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.py-15 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
 
 .py-30 {
   padding-top: 30px;
@@ -49,5 +152,24 @@ h6 {
 @media screen and (min-width: 992px) {
   body {
     font-size: 1.125rem;
+  }
+  section {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+
+  .text-lg-start {
+    text-align: start;
+  }
+
+  // Utilities spacing
+
+  .py-lg-0 {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .pr-lg-60 {
+    padding-right: 60px;
   }
 }
