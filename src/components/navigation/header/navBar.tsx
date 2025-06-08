@@ -9,7 +9,7 @@ const Navbar: React.FC<NavbarProps> = ({ onMenuToggle }) => {
     <nav>
       <div className="container-fluid d-flex justify-content-between nav-container">
         <Link to="/">Logo here</Link>
-        <div className="nav-desktop-and-menu-toggle d-flex">
+        <div className="nav-desktop-and-menu-toggle d-flex align-items-center">
           <div className="nav-desktop-links d-none d-lg-block">
             <NavLink className="nav-desktop-link" to="/">
               Forside
